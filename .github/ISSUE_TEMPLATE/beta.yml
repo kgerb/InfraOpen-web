@@ -1,0 +1,33 @@
+name: Join the Android beta
+description: Ask to test InfraOpen before it is public.
+title: "Beta request: "
+labels: [beta]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for wanting to help. We add testers in small groups and reply here.
+        This issue is public, so please don't post your email address or phone number. We will tell you how to install the app once you're in.
+  - type: textarea
+    id: use
+    attributes:
+      label: How would you use InfraOpen?
+      description: For example hiking, cycling tours, city trips, sleeping in your car or van.
+    validations:
+      required: true
+  - type: input
+    id: region
+    attributes:
+      label: Where are you mostly out and about?
+      description: A region or city is enough, e.g. "Schwarzwald" or "Munich".
+    validations:
+      required: true
+  - type: input
+    id: android
+    attributes:
+      label: Android version and phone
+      description: E.g. "Android 14, Pixel 7". InfraOpen is Android only for now.
+  - type: textarea
+    id: anything
+    attributes:
+      label: Anything else?
