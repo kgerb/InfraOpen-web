@@ -1,0 +1,39 @@
+name: Suggest a data source
+description: Point us to open data about drinking water, toilets, parking or overnight sites.
+title: "Data source: "
+labels: [data]
+body:
+  - type: input
+    id: link
+    attributes:
+      label: Link to the data or the portal
+    validations:
+      required: true
+  - type: input
+    id: area
+    attributes:
+      label: Area it covers
+      description: E.g. "City of Karlsruhe" or "all of Hessen".
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What does it contain?
+      multiple: true
+      options:
+        - Drinking water
+        - Toilets
+        - Parking
+        - Overnight sites
+        - Photos
+        - Something else
+  - type: input
+    id: licence
+    attributes:
+      label: Licence, if you know it
+      description: E.g. dl-de/by-2-0, CC BY 4.0, ODbL.
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
